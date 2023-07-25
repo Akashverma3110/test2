@@ -1,0 +1,5 @@
+FROM openjdk:12-alpine
+WORKDIR /app
+COPY . /app
+RUN javac Student.java
+CMD java Student
